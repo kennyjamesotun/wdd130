@@ -33,10 +33,11 @@ aside {
     width: 20rem;
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
-    /* */
+    /*  */
     padding: 1rem;
     background-color: #eee;
     color: #333;
+    text-align: center;
 
 }
 
@@ -48,15 +49,18 @@ aside img {
 main img {
     width: 150px;
     height: auto;
+    border: 1px solid #468;
+    padding: 2px;
+    box-shadow: 0 0 30px #808080;
 }
 
 p {
-    padding: 0
+    padding: 0;
 }
 
 footer {
     max-width: 840px;
-    margin-top: 10px;
+    margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
 }
