@@ -1,44 +1,55 @@
+:root {
+    --box-background-color: #838383;
+    --nav-background-color: darkblue;
+    --color: darkblue;
+    --position: relative;
+    --box-shadow: 0 0 30px #808080;
+    --padding: 0;
+    --text-align: center;
+    --border: 1px solid rgb(0 0 0 / 10%);
+    --height: auto;
+}
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: "border-box"
+    box-sizing: "border-box";
 
 }
 
 /* class selector */
 .box {
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 10%);
+    border: var(--border);
     padding: 1rem;
-    background-color: #838383;
-    color: #000;
+    background-color: var(--box-background-color);
 }
 
 nav {
-    background-color: darkblue;
+    background-color: var(--nav-background-color);
     padding: 10px;
 }
 
 nav a {
-    color: darkblue;
+    color: var(--color);
     display: block;
     padding: 20px;
 }
 
 h1 {
-    color: darkblue;
+    color: var(--color);
 }
 
 img {
     width: 150px;
-    height: auto;
-    border: 1px solid black;
+    height: var(--height);
+    border: var(--border);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: var(--box-shadow);
 }
 
 p {
-    padding: 0px;
+    padding: var(--padding);
 }
 
 main {
@@ -51,19 +62,19 @@ main img {
 
 aside {
     width: 20rem;
-    position: relative;
+    position: var(--position);
     /*  */
-    text-align: center;
+    text-align: var(--text-align);
 
 }
 
 aside img {
     width: 200px;
-    height: auto;
+    height: var(--height);
 }
 
 aside h2 {
-    position: relative;
+    position: var(--position);
     top: 30px;
     left: 15px;
 }
@@ -73,16 +84,17 @@ main img {
     height: auto;
     border: 1px solid #468;
     padding: 2px;
-    box-shadow: 0 0 30px #808080;
+    box-shadow: var(--box-shadow);
 }
 
 p {
-    padding: 0;
+    padding: var(--padding);
+    ;
 }
 
 footer {
     max-width: 840px;
     margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
+    border-top: var(--border);
+    text-align: var(--text-align);
 }
