@@ -1,7 +1,7 @@
 :root {
     --box-background-color: #838383;
     --nav-background-color: darkblue;
-    --color: darkblue;
+    --color: rgb(241, 215, 15);
     --position: relative;
     --box-shadow: 0 0 30px #808080;
     --padding: 0;
@@ -22,7 +22,8 @@
     margin: 1rem;
     border: var(--border);
     padding: 1rem;
-    background-color: var(--box-background-color);
+    background-color: #000;
+    color: var(--color);
 }
 
 nav {
