@@ -78,7 +78,7 @@ h1 {
 
 }
 
-.hero article p {
+.hero article {
     position: absolute;
     top: 80px;
     width: 100%;
