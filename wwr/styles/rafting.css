@@ -66,7 +66,7 @@ article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -80,10 +80,11 @@ h1 {
 
 .hero article {
     position: absolute;
-    top: 80px;
-    width: 100%;
-    padding: 20px;
-    text-align: center;
+    top: 300px;
+    width: 96%;
+    padding: 10px;
+    margin: 17px;
+    text-align: left;
     background-color: var(--primary-color);
     color: var(--color);
 
@@ -91,9 +92,7 @@ h1 {
 
 .hero article img {
     float: right;
-    margin: 0px;
-    width: 125px;
-    border-color: #838383;
-    position: absolute;
-    box-shadow: #000;
+    margin: 30px;
+    width: 150px;
+    border-color: var(--color);
 }
