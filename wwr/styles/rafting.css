@@ -1,11 +1,11 @@
 :root {
     --background-color: #fff;
     --color: #000;
-    --primary-color: rgb(214, 11, 11);
-    --secondary-color: #fff;
+    --primary-color: rgb(245, 149, 39);
+    --secondary-color: #eedede;
     --heading-font: "Verdana", "Helvetica" "San serif";
     --body-font: "Verdana", "Calibri";
-    --accent-color: rgba(241, 12, 12, 0.954);
+    --accent-color: rgba(5, 48, 85, 0.954);
 
 }
 
@@ -31,13 +31,17 @@ main,
 footer {
     width: 840px;
     margin: 0 auto;
-
 }
 
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color)
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+
 }
 
 nav,
@@ -74,10 +78,22 @@ h1 {
 
 }
 
+.hero article p {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--color);
+
+}
+
 .hero article img {
     float: right;
+    margin: 0px;
     width: 125px;
     border-color: #838383;
-    margin: 10px;
+    position: absolute;
     box-shadow: #000;
 }
