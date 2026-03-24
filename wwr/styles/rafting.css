@@ -1,11 +1,11 @@
 :root {
-    --background-color: rgba(103, 240, 224, 0.911);
-    --color: rgb(99, 3, 18);
-    --primary-color: navy;
-    --secondary-color: #000;
+    --background-color: #0c6dad;
+    --color: #000;
+    --primary-color: rgb(214, 11, 11);
+    --secondary-color: #fff;
     --heading-font: "Verdana", "Helvetica" "San serif";
     --body-font: "Verdana", "Calibri";
-    --accent-color: rgba(235, 10, 96, 0.897);
+    --accent-color: rgba(248, 40, 71, 0.897);
 
 }
 
@@ -70,7 +70,7 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent-color);
-    color: var(--color);
+    color: var(--secondary-color);
 
 }
 
