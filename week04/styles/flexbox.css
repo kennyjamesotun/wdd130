@@ -1,13 +1,15 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
-    margin: 1rem;
+    margin: 10rem;
+    padding: 10px;
 }
 
 .flex-container {
-    border: 3px dashed darkcyan;
-    background-color: lightyellow;
+    border: 3px dashed darkblue;
+    background-color: #f4f4a3;
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .flex-item {
@@ -15,12 +17,12 @@ body {
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 20%);
     padding: 0.5rem;
-    background-color: #bbb;
-    color: #333;
+    background-color: #abe;
+    color: #000;
 }
 
 .item1 {
-    min-height: 100px;
+    min-height: 200px;
 }
 
 .item2 {
@@ -28,5 +30,5 @@ body {
 }
 
 .item3 {
-    min-height: 300px;
+    min-height: 200px;
 }
