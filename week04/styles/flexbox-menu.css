@@ -4,7 +4,7 @@ body {
 }
 
 nav {
-    background-color: #36454f;
+    background-color: #d55510;
 }
 
 nav ul {
@@ -13,8 +13,8 @@ nav ul {
     flex-wrap: wrap;
     max-width: 900px;
     margin: 0 auto;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 
 nav a {
@@ -29,8 +29,10 @@ p {
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 10%);
     padding: 1rem;
-    background-color: #bed;
+    background-color: rgb(2, 63, 43);
     max-width: 400px;
+    color: #fff;
+
 }
 
 #devtools-btn {
