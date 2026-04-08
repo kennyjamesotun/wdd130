@@ -27,8 +27,8 @@
             <input type="email" id="email" name="email" required>
         </div>
 
-        <label for="browser">Select Browser</label>
         <div class="form-item column1">
+            <label for="browser">Select Browser</label>
             <select name="browser" id="browser">
                 <option value="1">Chrome</option>
                 <option value="2">Brave</option>
@@ -36,16 +36,19 @@
             </select>
         </div>
 
+
         <div class="form-item column1">
             <label for="pet"> Do you have a household pet?</label>
             <input type="checkbox" id="pet" name="pet">
         </div>
+        <div class="form-item column1">
+            <label for="feedback">List the places you have lived:</label>
+            <textarea id="feedback" name="feedback" rows="4"
+              placeholder="Stillwater Florida, Amsterdam Netherland, Tibuktu Mali"></textarea>
 
-        <label for="feedback">List the places you have lived:</label>
-        <textarea id="feedback" name="feedback" rows="4"
-          placeholder="Stillwater Florida, Amsterdam Netherland, Tibuktu Mali"></textarea>
-        <div class="button-hover"></div>
-        <button type="submit">Submit Poll</button>
+            <div class="button-hover"></div>
+            <button type="submit">Submit Poll</button>
+        </div>
         </div>
         </form>
 
