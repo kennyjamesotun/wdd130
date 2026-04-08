@@ -17,18 +17,23 @@ header {
 }
 
 h1 {
-    margin: 2rem;
+    margin: 1rem;
     font-size: very-large;
     color: red;
-    text-align: center;
+    text-align: left;
 
 }
 
+main {
+    display: grid;
+    place-content: left;
+}
+
 form {
-    width: 400px;
+    width: 750px;
     margin: 0 auto;
     padding: 1rem;
-    background-color: #24058a;
+    background-color: #d9d4e9;
     border: 1px solid rgb(0 0 0 / 0.1);
     border-radius: 0.5rem;
     display: grid;
@@ -38,6 +43,7 @@ form {
 .form-item {
     display: grid;
     align-items: center;
+
 }
 
 .column1 {
@@ -106,24 +112,6 @@ button {
 button:hover {
     background-color: #e6a713;
     color: #000;
-
-    form-item {
-        display: grid;
-        align-items: center;
-
-    }
-
-}
-
-.column1 {
-    grid-template-columns: 3fr 1fr;
-    margin: 0.5rem 0;
-
-    .column2 {
-
-        grid-template-columns: 1fr 2fr;
-        margin: 0.5rem 0;
-    }
 }
 
 footer {
