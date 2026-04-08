@@ -25,7 +25,7 @@ h1 {
 }
 
 form {
-    width: 600px;
+    width: 400px;
     margin: 0 auto;
     padding: 1rem;
     background-color: #24058a;
@@ -33,6 +33,22 @@ form {
     border-radius: 0.5rem;
     display: grid;
 
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 0.5rem 0;
 }
 
 fieldset {
