@@ -1,0 +1,107 @@
+:root {
+    --background-color: #fff;
+    --color: #000;
+    --primary-color: rgb(245, 149, 39);
+    --secondary-color: #eedede;
+    --heading-font: "Verdana", "Helvetica" "San serif";
+    --body-font: "Verdana", "Calibri";
+    --accent-color: rgba(5, 48, 85, 0.954);
+    --opacity: 0.9;
+
+}
+
+header {
+    background-color: var(--background-color);
+    color: var(--color);
+    display: grid;
+    padding: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+
+}
+
+.navigation {
+    display: flex;
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: var(--opacity);
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+
+}
+
+.hero article {
+    position: absolute;
+    top: 320px;
+    width: 96%;
+    padding: 0;
+    margin: 17px;
+    text-align: left;
+    opacity: var(--opacity);
+    background-color: var(--primary-color);
+    color: var(--color);
+
+}
+
+.hero article img {
+    float: right;
+    margin: 10px;
+    width: 150px;
+    border-color: var(--color);
+}
