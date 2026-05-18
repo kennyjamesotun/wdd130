@@ -5,9 +5,12 @@ body {
 
 .flex-container {
     border: 3px dashed darkcyan;
-    background-color: lightyellow;
+    background-color: rgb(138, 5, 98);
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
 }
 
 .flex-item {
@@ -15,7 +18,7 @@ body {
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 20%);
     padding: 0.5rem;
-    background-color: #bbb;
+    background-color: #ecd81d;
     color: #333;
 }
 
