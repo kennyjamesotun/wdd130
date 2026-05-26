@@ -24,9 +24,9 @@ nav a {
 }
 
 .box {
-    margin: 1rem;
-    border: 1px solidi rgb(0 0 0 / 10%);
-    padding: 1rem;
+    margin: 0;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: rem;
     background-color: #ddd;
     color: #000;
 
@@ -56,7 +56,7 @@ aside img {
 
 aside h2 {
     position: absolute;
-    top: 590px;
+    top: 15px;
     left: 150px;
 }
 
@@ -87,7 +87,8 @@ nav a {
 
 h1 {
     color: darkblue;
-    border-bottom: #fff;
+    border-color: #000;
+    border-bottom: 1px solid blue;
 
 }
 
