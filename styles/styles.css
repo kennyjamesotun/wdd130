@@ -31,16 +31,16 @@ nav ul {
 }
 
 .box {
-    margin: 0;
+    margin: rem;
     border: 1px solid rgb(0 0 0 / 10%);
-    padding: rem;
+    padding: 1.5rem;
     background-color: #ddd;
     color: #000;
 
 }
 
 p {
-    padding: 0px;
+    padding: 5px;
 }
 
 aside {
@@ -63,7 +63,7 @@ aside img {
 
 aside h2 {
     position: absolute;
-    top: 15px;
+    top: 30px;
     left: 150px;
 }
 
@@ -74,9 +74,10 @@ main {
 
 main img {
     width: 150px;
+    margin: 0.7rem;
     height: auto;
     border: 1px solid #000;
-    padding: 0;
+    padding: o;
     box-shadow: 0 0 30px #777;
     float: right;
 }
