@@ -23,6 +23,13 @@ nav a {
     color: #fff;/% shorthand for white %/
 }
 
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+}
+
 .box {
     margin: 0;
     border: 1px solid rgb(0 0 0 / 10%);
