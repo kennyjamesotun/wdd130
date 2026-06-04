@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Adventure | WDD 130</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --panel: #111827;
+            --text: #e5e7eb;
+            --muted: #94a3b8;
+            --accent: #f59e0b;
+            --accent-dark: #b45309;
+            --border: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Georgia, "Times New Roman", serif;
+            background:
+                radial-gradient(circle at top, rgba(245, 158, 11, 0.18), transparent 30%),
+                linear-gradient(180deg, #020617 0%, var(--bg) 100%);
+            color: var(--text);
+            display: grid;
+            place-items: center;
+            padding: 24px;
+        }
+
+        main {
+            width: min(720px, 100%);
+            background: rgba(17, 24, 39, 0.92);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 32px;
+            box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: clamp(2rem, 4vw, 3rem);
+            letter-spacing: 0.04em;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .scene {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .choices {
+            color: var(--muted);
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        input {
+            flex: 1 1 240px;
+            padding: 12px 14px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            background: #020617;
+            color: var(--text);
+            font-size: 1rem;
+        }
+
+        button {
+            border: none;
+            border-radius: 10px;
+            padding: 12px 18px;
+            background: var(--accent);
+            color: #111827;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #fbbf24;
+        }
+
+        .status {
+            min-height: 24px;
+            margin-top: 12px;
+            color: #fde68a;
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        .actions {
+            display: flex;
+            gap: 12px;
+            margin-top: 24px;
+            flex-wrap: wrap;
+        }
+
+        .secondary {
+            background: transparent;
+            border: 1px solid var(--accent-dark);
+            color: #fcd34d;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Dark Forest Adventure</h1>
+        <p class="scene" id="sceneText"></p>
+        <p class="choices" id="choiceText"></p>
+
+        <form id="choiceForm">
+            <label for="choiceInput" class="visually-hidden">Enter your choice</label>
+            <input id="choiceInput" name="choice" type="text" autocomplete="off" placeholder="Type your choice here">
+            <button type="submit">Choose</button>
+        </form>
+
+        <p class="status" id="statusText"></p>
+
+        <div class="actions">
+            <button type="button" class="secondary" id="restartButton">Restart Adventure</button>
+            <a href="../index.html" class="secondary">Back Home</a>
+        </div>
+    </main>
+
+    <script>
+        const scenes = {
+            start: {
+                text: "You are walking through a dark forest and find two items: a MATCH and a FLASHLIGHT. Which one do you want to pick up?",
+                choices: {
+                    match: "matchPath",
+                    flashlight: "flashlightPath"
+                }
+            },
+            matchPath: {
+                text: "You pick up the match and strike it. For an instant, the forest around you is illuminated. You see a large grizzly bear, and then the match burns out. Do you want to RUN, or HIDE behind a tree?",
+                choices: {
+                    run: "riverEscape",
+                    hide: "bearFindsYou"
+                }
+            },
+            flashlightPath: {
+                text: "You pick up the flashlight and turn it on. You see the pathway lit up in front of you, but you also hear something off to the side. Do you want to FOLLOW the path or LOOK in the trees?",
+                choices: {
+                    follow: "cabinEnding",
+                    look: "owlClue"
+                }
+            },
+            riverEscape: {
+                text: "You sprint through the brush and reach a rushing river. A narrow fallen log crosses to the other side. Do you CROSS the log or JUMP into the water?",
+                choices: {
+                    cross: "safeEnding",
+                    jump: "coldEnding"
+                }
+            },
+            bearFindsYou: {
+                text: "You duck behind a tree, but the bear catches your scent. The adventure ends here.",
+                choices: {}
+            },
+            cabinEnding: {
+                text: "You follow the path and discover a ranger cabin glowing warmly in the distance. You made it to safety.",
+                choices: {}
+            },
+            owlClue: {
+                text: "You shine the flashlight into the trees and spot an owl perched above a hidden wooden sign. It points toward a bridge. Do you TAKE the bridge or RETURN to the path?",
+                choices: {
+                    take: "safeEnding",
+                    return: "cabinEnding"
+                }
+            },
+            safeEnding: {
+                text: "You move carefully forward and find your way out of the forest just before dawn. You survive the night.",
+                choices: {}
+            },
+            coldEnding: {
+                text: "The river current is freezing and fast, but it carries you close to a road where help arrives at sunrise. You survive, shaken but safe.",
+                choices: {}
+            }
+        };
+
+        const sceneText = document.getElementById("sceneText");
+        const choiceText = document.getElementById("choiceText");
+        const statusText = document.getElementById("statusText");
+        const choiceInput = document.getElementById("choiceInput");
+        const choiceForm = document.getElementById("choiceForm");
+        const restartButton = document.getElementById("restartButton");
+
+        let currentScene = "start";
+
+        function renderScene() {
+            const scene = scenes[currentScene];
+            const options = Object.keys(scene.choices);
+
+            sceneText.textContent = scene.text;
+            choiceText.textContent = options.length
+                ? `Available choices: ${options.join(", ")}`
+                : "No more choices remain. Restart to play again.";
+
+            choiceInput.disabled = options.length === 0;
+            choiceForm.querySelector("button").disabled = options.length === 0;
+            choiceInput.value = "";
+            statusText.textContent = "";
+
+            if (options.length > 0) {
+                choiceInput.focus();
+            }
+        }
+
+        choiceForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            const answer = choiceInput.value.trim().toLowerCase();
+            const nextScene = scenes[currentScene].choices[answer];
+
+            if (!nextScene) {
+                statusText.textContent = "That choice is not available here. Type one of the listed options.";
+                choiceInput.focus();
+                return;
+            }
+
+            currentScene = nextScene;
+            renderScene();
+        });
+
+        restartButton.addEventListener("click", () => {
+            currentScene = "start";
+            renderScene();
+        });
+
+        renderScene();
+    </script>
+</body>
+
+</html>
