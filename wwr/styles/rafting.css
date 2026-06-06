@@ -102,23 +102,6 @@ article {
 
 }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
-
-}
-
-@media (max-width: 700px) {
-    .container {
-        grid-template-columns: 1fr;
-    }
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-
 .hero {
     position: relative;
 }
@@ -157,4 +140,112 @@ article {
     margin: 10px;
     width: 150px;
     border-color: var(--color);
+}
+
+.history-container {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.history-title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.history-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.history-content p {
+    flex: 1;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.history-image {
+    flex: 0 0 200px;
+    height: 150px;
+    background-color: #010d27;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Adventure  section */
+.adventure-section {
+    background-color: #f0f0f0;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Heading style */
+.adventure-section h2 {
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+/* Flex container for the cards */
+.adventure-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.adventure-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adventure-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: #cccccc;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.adventure-card p {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+
+/* css for the footer*/
+
+footer {
+    background-color: #d1c4e9;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #333;
+}
+
+.footer-content {
+    direction: absolute;
+    font-family: verdana;
+    font-size: 14px;
+    color: #333;
+    align-items: right;
+}
+
+.social-icons {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
 }
