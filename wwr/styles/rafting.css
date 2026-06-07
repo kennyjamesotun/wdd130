@@ -82,15 +82,9 @@ footer {
 h2 {
     font-family: var(--heading-font);
     width: 100%;
-    padding: 16px;
+    padding: 2px;
     text-align: center;
-    background-color: var(--accent-color);
     color: var(--primary-color);
-}
-
-.grid {
-    display: grid;
-    align-items: center;
 }
 
 nav,
@@ -119,6 +113,8 @@ article {
     padding: 16px;
     text-align: center;
     color: var(--secondary-color);
+    font-size: 24px;
+}
 
 }
 
@@ -143,38 +139,34 @@ article {
 }
 
 .history-container {
-    padding: 40px 20px;
+    padding: 20px;
     text-align: center;
 }
 
-.history-title {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin: 10px;
-    padding: 10px;
+.history-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
 }
 
 .history-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
     max-width: 1000px;
     margin: 0 auto;
-
 }
 
 .history-content p {
     flex: 1;
     text-align: left;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
-.history-image {
+.image-placeholder {
     flex: 0 0 200px;
     height: 150px;
-    background-color: #010d27;
+    background-color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
