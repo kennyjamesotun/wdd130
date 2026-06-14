@@ -102,16 +102,40 @@ article {
     display: block;
     width: 100%;
     height: auto;
+    opacity: 0.9;
 }
 
 .hero h1 {
     position: absolute;
     top: 40px;
     width: 100%;
-    padding: 16px;
+    padding: 1px;
     text-align: center;
     color: var(--secondary-color);
-    font-size: 40px;
+    font-size: 55px;
+    text-shadow: #ffffff;
+    inset: #691717;
+    text-shadow:
+        0 1px 0 #ccc,
+        0 2px 0 #c5c5c5,
+        0 3px 0 #350404,
+        0 5px 10px rgba(0, 0, 0, .1),
+        0 10px 10px rgba(0, 0, 0, .2),
+        0 20px 20px rgba(0, 0, 0, .3),
+        0 0px 30px rgb(2, 26, 58);
+}
+
+.neon-3d {
+    color: #fff;
+    text-shadow:
+        0 1px 0 #ccc,
+        0 2px 0 #c5c5c5,
+        0 3px 0 #bbb,
+        0 5px 10px rgba(0, 0, 0, .1),
+        0 10px 10px rgba(0, 0, 0, .2),
+        0 20px 20px rgba(0, 0, 0, .3),
+        0 0px 30px rgba(0, 255, 255, 1);
+
 }
 
 .hero article {
