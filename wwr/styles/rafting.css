@@ -5,13 +5,13 @@
     --secondary-color: #eedede;
     --heading-font: "Verdana";
     --body-font: "Calibri";
-    --accent-color: rgba(7, 68, 122, 0.954);
+
     --opacity: 0.9;
 
 }
 
 header {
-    background-color: rgba(1, 30, 54, 0.954);
+    background-color: var(--background-color);
     color: var(--color);
     display: grid;
     padding: 20px 30px 20px 80px;
