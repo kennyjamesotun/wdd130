@@ -3,8 +3,8 @@
     --color: #000;
     --primary-color: rgb(245, 149, 39);
     --secondary-color: #eedede;
-    --heading-font: "Verdana", "Helvetica" "San serif";
-    --body-font: "Verdana", "Calibri";
+    --heading-font: "Verdana";
+    --body-font: "Calibri";
     --accent-color: rgba(7, 68, 122, 0.954);
     --opacity: 0.9;
 
@@ -53,7 +53,7 @@ nav a {
 }
 
 .logo img {
-    margin: 20;
+    margin: 20px;
     padding: 20px;
     width: 30px;
     height: auto;
@@ -248,7 +248,6 @@ footer {
 }
 
 .footer-content {
-    direction: absolute;
     font-family: verdana;
     font-size: 14px;
     color: #333;
@@ -259,6 +258,6 @@ footer {
 
 .social-icons {
     display: flex;
-    padding: 20px;
+    padding: 5px;
     gap: 20px;
 }
