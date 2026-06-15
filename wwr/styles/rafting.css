@@ -38,7 +38,7 @@ nav ul {
 
 nav {
     background-color: rgba(1, 30, 54, 0.954);
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -214,6 +214,13 @@ footer {
     align-items: center;
     margin: auto;
 
+}
+
+.social-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
 }
 
 .social-icons {
