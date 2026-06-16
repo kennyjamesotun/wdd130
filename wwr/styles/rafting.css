@@ -38,7 +38,7 @@ nav ul {
 
 nav {
     background-color: rgba(1, 30, 54, 0.954);
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -123,6 +123,19 @@ article {
         0 0px 30px rgb(2, 26, 58);
 }
 
+.neon-3d {
+    color: #fff;
+    text-shadow:
+        0 1px 0 #ccc,
+        0 2px 0 #c5c5c5,
+        0 3px 0 #bbb,
+        0 5px 10px rgba(0, 0, 0, .1),
+        0 10px 10px rgba(0, 0, 0, .2),
+        0 20px 20px rgba(0, 0, 0, .3),
+        0 0px 30px rgba(0, 255, 255, 1);
+
+}
+
 .hero article {
     position: absolute;
     top: 200px;
@@ -186,11 +199,24 @@ article {
     margin: auto;
 }
 
-.adventure h2 {
+.adventure-box img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.adventure-caption h2 {
     font-size: 1.5rem;
     margin-bottom: 5px;
-    padding: 20px;
+    text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.adventure-caption p {
+    font-size: 1rem;
+
 }
 
 /* css for the footer*/
@@ -214,13 +240,6 @@ footer {
     align-items: center;
     margin: auto;
 
-}
-
-.social-container {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    padding: 20px;
 }
 
 .social-icons {
