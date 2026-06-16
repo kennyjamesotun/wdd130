@@ -167,6 +167,7 @@ article {
     flex: 1;
     text-align: left;
     line-height: 1.5;
+    font-size: 18px
 }
 
 .image-placeholder {
@@ -186,6 +187,9 @@ article {
     padding: 5px;
     max-width: 900px;
     margin: auto;
+    font-size: 18px;
+    text-align: center;
+    color: var(--primary-color);
 }
 
 .adventure-box img {
@@ -198,13 +202,13 @@ article {
 
 .adventure-caption h2 {
     font-size: 1.5rem;
-    margin-bottom: 5px;
-    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-transform: default;
     letter-spacing: 1px;
 }
 
 .adventure-caption p {
-    font-size: 1rem;
+    font-size: 18px;
 
 }
 
