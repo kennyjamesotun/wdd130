@@ -115,7 +115,7 @@ article {
     color: var(--secondary-color);
     font-size: 59px;
     text-shadow:
-        0 1px 0 #0430c0,
+        0 1px 0 hwb(240 95% 4%),
         0 2px 0 #eea507,
         0 3px 0 #bbb,
         0 5px 10px rgba(0, 0, 0, .1),
@@ -131,15 +131,16 @@ article {
     margin: 17px;
     text-align: left;
     opacity: var(--opacity);
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: orange;
+    color: var(--color);
+    font-size: 18px;
 
 }
 
 .hero article img {
     float: right;
     margin: 10px;
-    width: 150px;
+    width: 200px;
     border-color: var(--color);
 }
 
