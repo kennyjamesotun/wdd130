@@ -240,3 +240,136 @@ footer {
     padding: 5px;
     gap: 20px;
 }
+
+/*Contact information section*/
+.contact-info {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px 0;
+    color: #000;
+}
+
+/*Styling for the email link */
+.contact-info a {
+    color: #000;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 1000px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+.form-group {
+    display: flex;
+    align-items: left;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    flex: 1;
+    text-align: right;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    flex: 2;
+    padding: 15px;
+    border: 1px solid #777;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 33%;
+
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.5em;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background-color: var(--primary-color);
+    border: #145bf3;
+    padding: 10px 100px 10px 100px;
+    color: var(--secondary-color);
+    border-radius: 4px;
+    max-width: 100%;
+    font-weight: bold;
+    box-shadow: 1px 1px 3px rgba(9, 183, 236, 0.2);
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(4, 65, 116);
+}
+
+/*Employee section*/
+.employee-section {
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid #000;
+}
+
+.employee-section h2 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.employee-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.employee-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-placeholder {
+    width: 150px;
+    height: 150px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.employee-card p {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+}
