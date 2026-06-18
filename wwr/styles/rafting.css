@@ -271,8 +271,15 @@ footer {
 
 .form-group {
     display: flex;
-    align-items: left;
-    margin-bottom: 10px;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    /* This aligns all child elements to the left */
+    text-align: left;
+    gap: 10px;
+    width: 100%;
+    /* Or your desired width */
+    max-width: 500px;
 }
 
 .form-group label {
