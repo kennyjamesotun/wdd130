@@ -52,7 +52,7 @@
             <div class="contact-section">
                 <div class="map-placeholder"> <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.434729928991!2d-117.2972655!3d34.5425468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c3645932a4c06b%3A0x85e27ef84079f1fa!2sRiver%20St%2C%20Victorville%2C%20CA%2092395%2C%20USA!5e0!3m2!1sen!2sng!4v1781709452731!5m2!1sen!2sng"
-                      width="400" height="420" allowfullscreen="" loading="lazy"
+                      width="400" height="450" allowfullscreen="" loading="lazy"
                       referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
@@ -69,14 +69,17 @@
                         <input type="email" id="email" placeholder="Your Email" name="email"
                           required>
                     </div>
-
+                    <p>How do you want us to reach you?</p>
                     <div class="radio-group">
-                        <label class="radio-option"><input type="radio" name="purpose"> General
-                            Inquiry</label>
-                        <label class="radio-option"><input type="radio" name="purpose"> Reservation
-                            Question</label>
-                        <label class="radio-option"><input type="radio" name="purpose"> Website
-                            Suggestion</label>
+                        <label class="radio-option"><input type="radio" id="contact-phone"
+                              name="contact_method" value="phone"> Phone Call
+                        </label>
+                        <label class="radio-option"><input type="radio" id="contact-email"
+                              name="contact_method" value="email" checked> Email
+                        </label>
+                        <label class="radio-option"><input type="radio" id="contact-text"
+                              name="contact_method" value="text"> Text Message
+                        </label>
                     </div>
 
                     <div class="form-group">
