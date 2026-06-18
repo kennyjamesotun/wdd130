@@ -301,14 +301,15 @@ form {
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    width: 100%;
-    max-width: 500px;
+
 }
 
 .form-group {
     display: flex;
     align-items: left;
     margin-bottom: 10px;
+    width: 100%;
+    max-width: 500px;
 }
 
 .form-group label {
@@ -354,14 +355,22 @@ textarea {
 
 /* Submit Button */
 button[type="submit"] {
+    display: inline-block;
     background-color: var(--primary-color);
-    border: #145bf3;
-    padding: 10px 100px 10px 100px;
-    color: var(--secondary-color);
-    border-radius: 4px;
-    max-width: 100%;
+    color: #ffffff;
+    padding: 15px;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
     font-weight: bold;
-    box-shadow: 1px 1px 3px rgba(9, 183, 236, 0.2);
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    transition: all 0.9s ease;
+    cursor: pointer;
+    width: 100%;
+    max-width: 500px;
 }
 
 button[type="submit"]:hover {
@@ -421,4 +430,22 @@ button[type="submit"]:hover {
 
 .employee-card p:hover {
     text-decoration: underline;
+}
+
+.call-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 15px;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    transition: all 0.9s ease;
+    cursor: pointer;
+
 }
