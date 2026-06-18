@@ -265,7 +265,15 @@ footer {
 .social-icons {
     display: flex;
     padding: 5px;
-    gap: 20px;
+    gap: 30px;
+    margin: auto;
+
+}
+
+.social-container {
+    background-color: var(--primary-color);
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 /*Contact information section*/
