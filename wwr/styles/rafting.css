@@ -111,6 +111,11 @@ h2 {
     color: var(--primary-color);
 }
 
+.p {
+    font-size: 18px;
+
+}
+
 nav,
 p,
 section,
@@ -129,6 +134,7 @@ article {
     width: 100%;
     height: auto;
     opacity: 0.9;
+
 }
 
 .hero h1 {
@@ -138,7 +144,7 @@ article {
     padding: 1px;
     text-align: center;
     color: var(--secondary-color);
-    font-size: 59px;
+    font-size: 55px;
     text-shadow:
         0 1px 0 hwb(240 95% 4%),
         0 2px 0 #eea507,
@@ -176,7 +182,7 @@ article {
 
 .history-container h2 {
     margin-bottom: 1px;
-    font-size: 24px;
+    font-size: 25px;
     color: var(--primary-color);
 }
 
@@ -454,7 +460,8 @@ button[type="submit"]:hover {
     display: inline-block;
     background-color: var(--primary-color);
     color: #ffffff;
-    padding: 15px;
+    position: absolute;
+    padding: 10px;
     font-family: 'Arial', sans-serif;
     font-size: 18px;
     font-weight: bold;
@@ -465,5 +472,32 @@ button[type="submit"]:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
     transition: all 0.9s ease;
     cursor: pointer;
+}
 
+.marquee {
+    overflow: hidden;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 10px 0;
+    white-space: nowrap;
+}
+
+.marquee p {
+    display: inline-block;
+    margin: 0;
+    padding-left: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    animation: marqueeText 15s linear infinite;
+}
+
+@keyframes marqueeText {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
