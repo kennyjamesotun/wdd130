@@ -501,3 +501,93 @@ button[type="submit"]:hover {
         transform: translateX(-100%);
     }
 }
+
+/* Container to give the table smooth breathing room */
+.table-container {
+    width: 100%;
+    margin: 30px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Base Table Styling */
+.rafting-trip-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    /* Keeps the rounded corners crisp */
+}
+
+/* Header Styling (River Teal/Blue Accent) */
+.rafting-trip-table th {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Table Rows and Data Cells */
+.rafting-trip-table td {
+    padding: 14px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #333333;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Alternate Row Shading (Zebra Stripes) */
+.rafting-trip-table tbody tr:nth-child(even) {
+    background-color: #f8faf9;
+}
+
+/* Subtle highlights when hovering over a row */
+.rafting-trip-table tbody tr:hover {
+    background-color: #f1f5f4;
+}
+
+/* --- MOBILE RESPONSIVE LAYOUT --- */
+@media screen and (max-width: 600px) {
+
+    /* Hides the desktop table headers */
+    .rafting-trip-table thead {
+        display: none;
+    }
+
+    /* Forces elements to stack vertically instead of side-by-side */
+    .rafting-trip-table,
+    .rafting-trip-table tbody,
+    .rafting-trip-table tr,
+    .rafting-trip-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .rafting-trip-table tr {
+        margin-bottom: 15px;
+        border: 1px solid #e0e0e0;
+        border-radius: 6px;
+        background-color: #ffffff;
+    }
+
+    .rafting-trip-table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .rafting-trip-table td:last-child {
+        border-bottom: none;
+    }
+
+    /* Aligns the left column text properly on small mobile devices */
+    .rafting-trip-table td strong {
+        float: left;
+        color: var(--secondary-color);
+    }
+}
